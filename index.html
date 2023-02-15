@@ -11,37 +11,61 @@
 
     <header>
         <h1 class="text-5xl text-center bg-slate-300 p-5">
-            Welcome to bank <span class="text-green-600 ">Al-Islamia</span>
+            Welcome to bank <span class="text-green-600 font-bold ">Al-Islamia</span>
         </h1>
     </header>
 
-    <main class=" sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
-        <div class="grid grid-cols-3 gap-10 m-10">
+    <main class="  max-w-7xl mx-auto">
+        <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-10 m-10">
             <div class="bg-violet-400 px-4 py-10 text-center rounded-lg">
                 <h1 class="text-white font-bold text-3xl">
                     Deposit Amount</h1>
-                <p class="text-3xl text-white mt-5">
-                    $<span>00</span></p>
+                <p class="text-4xl text-white mt-5">
+                    $<span id="depositNumber">00</span></p>
             </div>
 
             <div class="bg-cyan-500 px-4 py-10 text-center rounded-lg">
                 <h1 class="text-white font-bold text-3xl">
                     Withdraw Amount</h1>
-                <p class="text-3xl text-white mt-5">
-                    $<span>00</span></p>
+                <p class="text-4xl text-white mt-5">
+                    $<span id="withdrawText">00</span></p>
             </div>
 
 
             <div class="bg-rose-400 px-4 py-10 text-center rounded-lg">
                 <h1 class="text-white font-bold text-3xl">
                     Total Balance</h1>
-                <p class="text-3xl text-white mt-5">
-                    $<span>00</span></p>
+                <p class="text-4xl text-white mt-5">
+                    $<span id="balanceAmount">1000</span></p>
+            </div>
+
+        </div>
+
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-10 m-10">
+            <div class="bg-fuchsia-200 px-10 py-10 text-start rounded-lg">
+                <h1 class="text-white font-bold text-3xl">
+                    Enter Deposit Amount</h1>
+                <input class="w-3/5 my-5 p-2" type="number" name="depositNum" id="depositInputAmount"
+                    placeholder="Deposit balance $$">
+                <button class="block px-3 py-2 rounded-md text-white bg-green-600" type="submit"
+                    id="depositBtn">Deposit</button>
+            </div>
+
+            <div class="bg-cyan-500 px-10 py-10 text-start rounded-lg">
+                <h1 class="text-white font-bold text-3xl">
+                    Enter Withdraw Amount</h1>
+                <input class="w-3/5 my-5 p-2" type="number" name="depositNum" id="withdrawalAmount"
+                    placeholder="Withdrawal balance $$">
+                <button class="block px-3 py-2 rounded-md text-white bg-green-600" type="submit"
+                    id="withdrawBtn">Withdraw</button>
+
             </div>
 
         </div>
 
     </main>
+
+    <script src="scripts/script.js"></script>
 
 </body>
 
